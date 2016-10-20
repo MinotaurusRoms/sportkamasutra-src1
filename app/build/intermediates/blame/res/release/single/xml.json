@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\Schwenn\\AndroidStudioProjects\\sportkamasutra-src1\\app\\build\\intermediates\\res\\merged\\release\\xml\\plugins.xml",
+        "source": "C:\\Users\\Schwenn\\AndroidStudioProjects\\sportkamasutra-src1\\app\\src\\main\\res\\xml\\plugins.xml"
+    },
+    {
+        "merged": "C:\\Users\\Schwenn\\AndroidStudioProjects\\sportkamasutra-src1\\app\\build\\intermediates\\res\\merged\\release\\xml\\cordova.xml",
+        "source": "C:\\Users\\Schwenn\\AndroidStudioProjects\\sportkamasutra-src1\\app\\src\\main\\res\\xml\\cordova.xml"
+    }
+]

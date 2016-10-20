@@ -1,0 +1,6 @@
+﻿INSERT INTO Musclegroup  (ID,Musclegroup)VALUES(1,'Biceps Brachii')
+INSERT INTO Musclegroup  (ID,Musclegroup)VALUES(2,'Triceps Brachii')
+INSERT INTO Musclegroup  (ID,Musclegroup)VALUES(3,'Rectus Abdominis')
+INSERT INTO Musclegroup  (ID,Musclegroup)VALUES(4,'Musculus Latissimus Dorsi')
+INSERT INTO Musclegroup  (ID,Musclegroup)VALUES(5,'Gluteus Maximus')
+INSERT INTO Musclegroup  (ID,Musclegroup)VALUES(6,'Pectoralis')

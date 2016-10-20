@@ -1,0 +1,380 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 
+	<title>Sport Kamasutra</title>
+	
+	<link rel="stylesheet" href="css/jquery.mobile-1.1.0.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.1.0.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.theme-1.1.0.css" />
+	<link rel="stylesheet" href="css/custom.css" />
+	
+	<script type="text/javascript" charset="utf-8" src="externaljs/cordova-1.9.0.js"></script>
+	<script type="text/javascript" charset="utf-8" src="externaljs/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+	$(document).bind("mobileinit", function() {
+		console.log('mobileinit *****************************************');
+		
+		$.mobile.buttonMarkup.hoverDelay = 50;
+		$.mobile.defaultPageTransition = 'none';
+		$.mobile.transitionFallbacks.flip = 'none';
+		$.mobile.transitionFallbacks.slide = 'none';
+		$.mobile.transitionFallbacks.swipeleft = 'none';
+		$.mobile.transitionFallbacks.swiperight = 'none';
+	});
+	</script>
+	<script type="text/javascript" charset="utf-8" src="externaljs/jquery.mobile-1.1.0.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="externaljs/jquery-ui-1.8.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="externaljs/jstorage.js"></script>
+	<script type="text/javascript" charset="utf-8" src="externaljs/share.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/initdb.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/custom.js"></script>
+</head>
+<body>
+	<div id="fb-root"></div>
+	<div data-role="page" id="home1">
+         <div data-role="header" data-position="fixed">
+             <h1>
+                 Übersicht
+             </h1>
+         </div>
+         <div class="subheader"></div>
+         <div data-role="content">
+             <div>
+                 <img class="headerimg" src="" />
+             </div>
+             <div>
+                 <a id="categorylink" href="#category" data-transition="none" class="link">
+                 	<img src="./img/Sonstige/kategorienBtn@2x.png" />
+                 	<span></span>
+                 </a>
+                 <a id="all" href="" data-transition="none" class="link">
+                 	<img src="./img/Sonstige/alleBtn@2x.png" />
+                 	<span>Alle</span>
+                 </a>
+                 <a id="notdone" data-selected="notdone" href="" data-transition="none" class="selecteditems link">
+                 	<img src="./img/Sonstige/nichtgetan@2x.png" />
+                 	<span>Nicht getan</span>
+                 </a>
+                 <a id="done" data-selected="done" href="" data-transition="none" class="selecteditems link">
+                 	<img src="./img/Sonstige/getanBtn@2x.png" />
+                 	<span>Getan</span>
+                 </a>
+                 <a id="like" data-selected="like" href="" data-transition="none" class="selecteditems link">
+                 	<img src="./img/Sonstige/gefaelltBtn@2x.png" />
+                 	<span>Gefällt mir</span>
+                 </a>
+                 <a id="wish" data-selected="wish" href="" data-transition="none" class="selecteditems link">
+                 	<img src="./img/Sonstige/wunschBtn@2x.png" />
+                 	<span>Wunsch</span>
+                 </a>
+				 <a id="knowledge" href="" data-transition="none" class="link">
+                 	<img src="./img/Sonstige/wissenBtn@2x.png" />
+                 	<span>Wissen</span>
+                 </a>
+				 <a id="facebook" href="http://facebook.com/SportKamasutra" target="_blank" class="link">
+					 <img src="./img/Sonstige/facebookBtn@2x.png" />
+					 <span>Facebook</span>
+				 </a>
+				 <a id="tipps" href="" data-transition="none" class="link">
+					 <img src="./img/Sonstige/tippsBtn@2x.png" />
+					 <span>Tipps</span>
+				 </a>
+				 <a id="settings" href="" data-transition="none" class="link">
+					 <img src="./img/Sonstige/einstellungenBtn@2x.png" />
+					 <span>Einstellungen</span>
+				 </a>
+				 <a id="feedback" href="mailto:sportkamasutra@gmail.com?subject=SportKamasutra%20Feedback" class="link">
+					 <img src="./img/Sonstige/feedbackBtn@2x.png" />
+					 <span>Feedback</span>
+				 </a>
+				 <a id="aboutus" href="" data-transition="none" class="link">
+					 <img src="./img/Sonstige/ueberunsBtn@2x.png" />
+					 <span>Über uns</span>
+				 </a>
+				 <!--
+				 <a id="randomize"  href="" data-transition="none" class="link">
+                 	<img src="./img/Sonstige/zufallBtn@2x.png" />
+                 	<span>Zufällig</span>
+                 </a>
+				 
+				 -->
+             </div>
+         </div>
+     </div><!-- /page one -->
+     
+
+	<div data-role="page" id="category">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Kategorien</h1>
+		</div>
+		<a class="backbutton" href="#home1" data-transition="none"><span></span><span class="text">Übersicht</span><span></span></a>
+		<div class="subheader"></div>
+	
+		<div data-role="content">
+			<div>
+                 <img class="headerimg" src="" />
+             </div>
+			<div>
+                 <a id="category_belastungsgrad" href="" data-transition="none" class="link">
+                 	<img src="./img/Sonstige/belastungsgradBtn@2x.png" />
+                 	<span>Belastungsgrad</span>
+                 </a>
+                 <a id="category_mann" href="" data-transition="none" class="link">
+                 	<img src="./img/Sonstige/mannBtn@2x.png" />
+                 	<span>Männer</span>
+                 </a>
+                 <a id="category_frau" href="" data-transition="none" class="link">
+                 	<img src="./img/Sonstige/frauBtn@2x.png" />
+                 	<span>Frauen</span>
+                 </a>
+                 <a id="category_intimitaetsgrad" href="" data-transition="none" class="link">
+                 	<img src="./img/Sonstige/intimitaetsgradBtn@2x.png" />
+                 	<span>Intimitätsgrad</span>
+                 </a>
+                 <a id="category_sportarten" href="" data-transition="none" class="link">
+                 	<img src="./img/Sonstige/sportartenBtn@2x.png" />
+                 	<span>Sportarten</span>
+                 </a>
+                 <a id="category_muskulatur" href="" data-transition="none" class="link">
+                 	<img src="./img/Sonstige/muskulaturBtn@2x.png" />
+                 	<span>Muskulatur</span>
+                 </a>
+             </div>
+		</div>
+		
+	</div><!-- /page category -->
+	
+	
+	<div data-role="page" id="themelist">
+	
+		<div data-role="header" data-position="fixed">
+			<h1></h1>
+		</div>
+		<a class="backbutton" href="#category" data-transition="none"><span></span><span class="text">Zurück</span><span></span></a>
+		<div class="subheader">
+			<div>
+                 <img class="headerimg" src="" />
+             </div>
+		</div>
+	
+		<div data-role="content">
+			<div class="contentlinks">
+             </div>
+		</div>
+		
+	</div><!-- /page themelist -->
+	
+	
+	
+	<div data-role="page" id="preview_page" data-add-back-btn="false">
+	
+		<div data-role="header" data-position="fixed">
+			<h1></h1>
+		</div>
+		<a class="backbutton" href="#home1" data-transition="none"><span></span><span class="text">Übersicht</span><span></span></a>
+		<div class="subheader"></div>
+	
+		<div data-role="content">
+		</div>
+	</div><!-- /page preview_page -->
+	
+	
+	<div data-role="page" id="position_page">
+	
+		<div data-role="header" data-position="fixed">
+			<h1></h1>
+			<!-- <div><a class="sharebutton" href=""><img src="img/empfehlenBtn_white.png" /></a></div>  -->
+		</div>
+		<a class="backbutton" href="#home1" data-transition="none"><span></span><span class="text">Zurück</span><span></span></a>
+		<div class="subheader"></div>
+	
+		<div data-role="content">
+			<div class="subline"></div>
+			<div class="overlay"><div></div><img src="img/position_arrow_down.png" /></div>
+			<a href="#muscle_page_man" id="muscle" data-transition="none">
+				<img src="img/Sonstige/MuskelpartienBtn@2x.png" />
+				<span class="muscle_label">Muskel</span>
+			</a>
+			<img class="mainimage" src="./img/Stellungen/Stellung1@2x.png" alt="position" />
+		</div>
+		
+		<div data-role="footer">
+			<div>
+				<a class="done"><img src="img/Sonstige/getanTagBtn.png" /><span>Getan</span></a>
+				<a class="like"><img src="img/Sonstige/gefaelltTagBtn@2x.png" /><span>Gefällt mir</span></a>
+				<a class="wish"><img src="img/Sonstige/wunschTagBtn@2x.png" /><span>Wunsch</span></a>
+			</div>
+		</div>
+		
+		<div class="toolbar-bottom">
+			<a id="postmail" href="">E-Mail</a>
+			<a id="postfacebook" href="">Facebook</a>
+<!-- 			<a id="posttwitter" href="">Twitter</a> -->
+			<a href="" class="cancel" style="margin-top: 1em;">Abbrechen</a>
+		</div>
+	</div><!-- /page preview_page -->
+	
+	
+	<div data-role="page" id="muscle_page_man">
+	
+		<div data-role="header" data-position="fixed">
+			<h1></h1>
+		</div>
+		<a class="backbutton" href="#position_page" data-transition="none"><span></span><span class="text">Zurück</span><span></span></a>
+		<div class="subheader"></div>
+	
+		<div data-role="content">
+			<div class="subline"></div>
+			<div class="overlay">
+				<div>
+					<table>
+						<tr>
+							<td class="first">Primär</td>
+							<td class="row1"></td>
+						</tr>
+						<tr>
+							<td class="sec">Sekundär</td>
+							<td class="row2"></td>
+						</tr>
+					</table>
+				</div>
+				<img src="img/position_arrow_down.png" />
+			</div>
+			<a class="switchleft" href="#position_page" data-transition="none"><img src="img/Sonstige/Pfeil_links.png" /></a>
+			<img class="muscleimg" src="" />
+			<a class="switchright" href="#muscle_page_woman" data-transition="none"><img src="img/Sonstige/Pfeil_rechts.png" /></a>
+			<div class="muscle_homelink">
+				<a href="#home1" data-transition="flip"><img src="img/Sonstige/homeBtn@2x.png" /></a>
+			</div>
+		</div>
+		
+	</div><!-- /page muscle_page_man -->
+	
+	
+	<div data-role="page" id="muscle_page_woman">
+	
+		<div data-role="header" data-position="fixed">
+			<h1></h1>
+		</div>
+		<a class="backbutton" href="#muscle_page_man" data-transition="none"><span></span><span class="text">Zurück</span><span></span></a>
+		<div class="subheader"></div>
+	
+		<div data-role="content">
+			<div class="subline"></div>
+			<div class="overlay">
+				<div>
+					<table>
+						<tr>
+							<td class="first">Primär</td>
+							<td class="row1"></td>
+						</tr>
+						<tr>
+							<td class="sec">Sekundär</td>
+							<td class="row2"></td>
+						</tr>
+					</table>
+				</div>
+				<img src="img/position_arrow_down.png" />
+			</div>
+			<a class="switchleft" href="#muscle_page_man" data-transition="none"><img src="img/Sonstige/Pfeil_links.png" /></a>
+			<img class="muscleimg" src="" />
+			<div class="muscle_homelink">
+				<a href="#home1" data-transition="flip"><img src="img/Sonstige/homeBtn@2x.png" /></a>
+			</div>
+		</div>
+		
+	</div><!-- /page muscle_page_woman -->
+	
+	
+	
+	
+	<div data-role="page" id="knowledge_page">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Wissen</h1>
+		</div>
+		<a class="backbutton" href="#home1" data-transition="none"><span></span><span class="text">Zurück</span><span></span></a>
+		<div class="subheader">
+			<div>
+                 <img class="headerimg" src="" />
+             </div>
+		</div>
+	
+		<div data-role="content">
+			<div class="contentlinks">
+             </div>
+		</div>
+		
+	</div><!-- /page knowledge_page -->
+	
+	
+	<div data-role="page" id="knowledge_details_page">
+	
+		<div data-role="header" data-position="fixed">
+			<h1></h1>
+		</div>
+		<a class="backbutton" href="#knowledge_page" data-transition="none"><span></span><span class="text">Zurück</span><span></span></a>
+		<div class="subheader">
+			<div>
+                 <img class="headerimg" src="" />
+             </div>
+		</div>
+	
+		<div data-role="content">
+			 <div class="contentlinks">
+             </div>
+		</div>
+		
+	</div><!-- /page knowledge_details_page -->
+	
+	
+	<div data-role="page" id="settings_page">
+	
+		<div data-role="header" data-position="fixed">
+			<h1></h1>
+		</div>
+		<a class="backbutton" href="#home1" data-transition="none"><span></span><span class="text">Zurück</span><span></span></a>
+		<div class="subheader"></div>
+	
+		<div data-role="content">
+			<div>
+                 <img class="headerimg" src="" />
+             </div>
+			 <div class="contentlinks">
+			 	<div class="cell backgroundmusic">
+			 		<div>
+			 			<img src="img/Einstellungen/Music@2x.png" />
+			 			<div>Musik</div>
+			 		</div>
+			 		<a href=""><img src="img/Einstellungen/NotCheck@2x.png" /></a>
+			 	</div>
+			 	<div style="clear: both;"></div>
+			 	<!-- 
+			 	<div class="cell buttonmusic">
+			 		<div>
+			 			<img src="img/Einstellungen/Sound@2x.png" />
+			 			<div>Button-Töne</div>
+			 		</div>
+			 		<a href=""><img src="img/Einstellungen/NotCheck@2x.png" /></a>
+			 	</div>
+			 	<div style="clear: both;"></div>
+			 	 -->
+			 	<div class="cell video">
+			 		<div>
+				 		<img src="img/Einstellungen/Video@2x.png" />
+				 		<div>Video</div>
+			 		</div>
+			 		<a href="http://youtu.be/G9AEUlVOY-w" target="_blank"><img src="img/Einstellungen/Play@2x.png" /></a>
+			 	</div>
+			 	<div style="clear: both;"></div>
+             </div>
+		</div>
+		
+	</div><!-- /page knowledge_details_page -->
+	
+</body>
+</html>

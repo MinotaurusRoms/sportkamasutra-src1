@@ -1,0 +1,772 @@
+@font-face {
+	font-family: 'FarnhamDisplay';
+	src: url('../fonts/FarnhamDisplay-Regular.otf') format("opentype");
+}
+
+@font-face {
+	font-family: 'FarnhamDisplay';
+	src: url('../fonts/FarnhamDisplay-Black.otf') format("opentype");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'FarnhamDisplay';
+	src: url('../fonts/FarnhamDisplay-RegularItal.otf') format("opentype");
+	font-style: italic;
+}
+
+
+
+a {
+	text-decoration: none;
+	color: #8B6508;
+}
+
+.backbutton {
+	position: fixed;
+	left: 5px;
+	top: 7px;
+	z-index: 4000;
+}
+
+.backbutton > span:FIRST-CHILD {
+	display: block;
+	background: url("../img/back_button_background_left.png") no-repeat left center transparent;
+	height: 30px;
+	width: 10px;
+	background-size: 100% 100%;
+	float:left;
+}
+
+.backbutton > span.text {
+	padding: 8px 2px;
+	color: white;
+	font-size: 12px;
+	
+	font-family: Arial;
+	font-weight: normal;
+	
+	display: block;
+	float:left;
+	background: url("../img/back_button_background_middle.png") repeat-x left center transparent;
+	background-size: 100% 100%;
+}
+
+.backbutton > span:LAST-CHILD {
+	display: block;
+	background: url("../img/back_button_background_right.png") no-repeat right center transparent;
+	height: 30px;
+	width: 5px;
+	background-size: 100% 100%;
+	float:left;
+}
+
+.sharebutton {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	text-align: right;
+	
+	background: url("../img/back_button_background_middle.png") repeat-x left center transparent;
+	background-size: 100% 100%;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.sharebutton > img {
+	height: 18px;
+	padding: 5px;
+}
+
+.category_buttons,
+.gender_buttons,
+.intimicy_buttons {
+	margin: 24px auto 4px auto;
+	width: 82%;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+}
+
+.category_buttons a,
+.intimicy_buttons a,
+.gender_buttons a {
+	display: -webkit-box;
+	-webkit-box-flex: 1;
+	-webkit-box-pack: center;
+	border: 1px solid #3D2E08;
+	padding: 0.2em 1em;
+	margin: 2%;
+	color: white;
+	border-radius: 3px;
+	text-align: center;
+	font-size: 11px;
+	font-weight: bold;
+	text-shadow: none;
+	background: url("../img/category_buttons_background.png") repeat-x left center;
+}
+.category_buttons a:FIRST-CHILD,
+.gender_buttons a:FIRST-CHILD,
+.intimicy_buttons a:FIRST-CHILD {
+	margin-left: 0;
+}
+.category_buttons a:LAST-CHILD,
+.gender_buttons a:LAST-CHILD,
+.intimicy_buttons a:LAST-CHILD {
+	margin-right: 0;
+}
+.category_buttons a:ACTIVE,
+.intimicy_buttons a:ACTIVE,
+.gender_buttons a:ACTIVE,
+.category_buttons a.active,
+.gender_buttons a.active,
+.intimicy_buttons a.active {
+	border-top: 1px solid #147C90;
+	border-right: 1px solid #147C90;
+	border-left: 1px solid #147C90;
+	border-bottom: 1px solid #147C90;
+	background: url("../img/category_buttons_background_selected.png") repeat-x  left center;
+}
+
+.gender_buttons {
+	width: 60%;
+}
+
+.gender_buttons a {
+	height: 1.2em;
+}
+.gender_buttons a.man img,
+.gender_buttons a.woman img {
+	height: 100%;
+}
+	
+#home1 .ui-content > div,
+#home2 .ui-content > div,
+#category .ui-content > div,
+#sports .ui-content > div,
+#knowledge_page .ui-content > div,
+#knowledge_details_page .ui-content > div,
+#settings_page .ui-content > div,
+#themelist .ui-content > div {
+	text-align: center;
+}
+
+.headerimg {
+	width: 90%;
+}
+
+.ui-header h1 {
+	font-weight: bold !important;
+}
+
+.headerbackground {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#614D1D), color-stop(50%,#614D1D), color-stop(52%,#513B05), color-stop(100%,#423004));
+	height: 22px;
+}
+
+.ui-bar-a {
+}
+
+.ui-header-fixed {
+}
+
+.subheader {
+	position: fixed;
+	top: 41px;
+	left: 0;
+	width: 100%;
+	min-height: 20px;
+	background-image: url("../img/background.png"), -webkit-gradient(linear, left top, right top, color-stop(1%,#e6dabc), color-stop(20%,#f7f1e1), color-stop(80%,#f7f1e1), color-stop(100%,#e6dabc)); /* Chrome,Safari4+ */
+	background-image: url("../img/background.png"), -webkit-linear-gradient(left,  #e6dabc 1%,#f7f1e1 20%,#f7f1e1 80%,#e6dabc 100%); /* Chrome10+,Safari5.1+ */
+	background-repeat: repeat-x, no-repeat; 
+	background-size: 7px, auto;
+}
+
+.subheader > div {
+	text-align: center;
+}
+
+.subheader .headerimg {
+	margin-top: 8%;
+}
+
+/*
+*
+*   HOME / Overview
+*
+*/
+
+#sports .ui-content .contentlinks img {
+	/*width: 20%;*/
+}
+
+#themelist .ui-content .contentlinks {
+	width: 90%;
+	margin: 8% auto;	
+}
+
+.home_facebook {
+	text-align: right !important;
+}
+.home_facebook > a {
+	position: absolute;
+	top: 43px;
+	right: 10%;
+	width: 100%;
+}
+.home_facebook > a > img {
+	width: 10%;
+}
+
+.link {
+	display: block;
+	float: left;
+	width: 31%;
+	text-align: center;
+	
+	font-size: 14px;
+	font-family: FarnhamDisplay;
+	font-weight: bold;
+
+	margin-top: 3%;
+}
+
+.link:nth-child(3n+1) {
+	clear: left;
+	margin-left: 5%;
+}
+
+.link:nth-child(3n) {
+}
+
+.link > img {
+	width: 100%;
+}
+
+.link > span {
+	display: block;
+	font-size: 13px;
+}
+
+#home1 .ui-footer div,
+#home2 .ui-footer div {
+	text-align: center;
+	padding-bottom: 2%;
+}
+
+#home1 .ui-footer > div img,
+#home2 .ui-footer > div img {
+	width: 4%;
+}
+
+#home1 .ui-footer,
+#home2 .ui-footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+
+/*
+*
+*   Preview Page
+*
+*/
+.preview {
+	width: 40%;
+	display: block;
+	float: left;
+	margin: 5%;
+}
+
+.preview:nth-child(2n+1) {
+	clear: left;
+}
+
+.preview .tab {
+	background: url("../img/preview_tab_background.png") right center no-repeat #9C730F;
+	width: 70px;
+	padding: 1px;
+}
+
+.preview .tab > span {
+	display: inline-block;
+	width: 13px;
+	height: 11px;
+	background-size: contain;
+}
+
+.preview .tab > span:FIRST-CHILD {
+	margin-left: 4px;
+}
+
+.preview .tab .done {
+	background: url("../img/preview_done.png") no-repeat;
+	background-size: contain;
+}
+.preview .tab .done.active {
+	background: url("../img/preview_done_active.png") no-repeat;
+	background-size: contain;
+}
+.preview .tab .like {
+	background: url("../img/preview_like.png") no-repeat;
+	background-size: contain;
+	
+}
+.preview .tab .like.active {
+	background: url("../img/preview_like_active.png") no-repeat;
+	background-size: contain;
+}
+.preview .tab .wish {
+	background: url("../img/preview_wish.png") no-repeat;
+	background-size: contain;
+	
+}
+.preview .tab .wish.active {
+	background: url("../img/preview_wish_active.png") no-repeat;
+	background-size: contain;
+}
+
+.ui-mobile .preview .previewimg {
+	background: url("../img/Sonstige/GridViewBackground.png") no-repeat;
+				
+	background-size: 100% 96%;
+	background-clip: border-box;
+	padding: 0.2em;
+}
+
+.ui-mobile .preview .previewimg img {
+	width: 100%;
+}
+
+.ui-mobile .preview > .subtitel {
+	text-align: center;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.ui-content {
+	padding-top: 30px;
+	color: #8B6508;
+}
+
+
+/*
+*
+*   Position Page
+*
+*/
+#position_page .ui-content,
+#muscle_page_man .ui-content,
+#muscle_page_woman .ui-content {
+	padding: 0;
+	position: absolute;
+	width: 100%;
+	height: 90%;
+}
+
+.ui-content > .subline {
+	background-color: #FBF8F0;
+	color: #A28439;
+	font-weight: bold;
+	padding: 0.8em 1.5em;
+	z-index: 300;
+	position: relative;
+	font-family: FarnhamDisplay;
+	font-size: 14px;
+}
+
+#position_page .ui-content > img {
+	width: 100%;
+	margin-top: 10%;
+	position: relative;
+	z-index: 10;
+}
+
+#position_page .ui-content #muscle {
+	position: absolute;
+	top: 14%;
+	right: 5%;
+	z-index: 90;
+}
+#position_page .ui-content #muscle > img {
+	width: 70px;
+}
+#position_page .ui-content #muscle > span.muscle_label {
+	position: absolute;
+	top: 76px;
+	color: #5D470D;
+	z-index: 91;
+	font-size: 12px;
+	text-align: center;
+	left: -30px;
+	width: 130px;
+}
+
+.ui-content .overlay {
+	z-index: 120;
+	position: absolute;
+	width: 100%;
+}
+	
+.ui-content .overlay > div {
+	color: #A28439;
+	background-color: #FEFCF9;
+	padding: 0.5em 1.5em 1em 1.5em;
+	display: none;
+	opacity: 0.8;
+	font-size: 14px;
+	font-family: FarnhamDisplay;
+}
+
+.ui-content .overlay > img {
+	width: 100%;
+}
+
+#position_page .ui-footer {
+	width: 100%;
+	background: transparent !important;
+	position: fixed;
+	z-index: 200;
+	bottom: 0;
+	border: 0;
+	text-align: center;
+}
+
+#position_page .ui-footer > div {
+	width: 80%;
+	margin: 0 auto;
+	float: right;
+	margin-bottom: 2%;
+}
+	
+#position_page .ui-footer > div > a {
+	float: left;
+	display: block;
+	color: #8B6508;
+	text-shadow: none;
+	font-size: 90%;
+	cursor: pointer;
+	font-size: 14px;
+	width: 25%;
+}
+
+#position_page .ui-footer > div > a > span {
+	display: block;
+}
+
+#position_page .ui-footer > div > a.active {
+	color: #2BA6B1;
+}
+
+#position_page .ui-footer > div > a > img {
+	width: 70%;
+}
+
+.toolbar-bottom {
+	display: none;
+	z-index: 800;
+	position: absolute;
+	width: 100%;
+	background-color: black;
+	bottom: 0;
+	padding: 1em 0;
+}
+.toolbar-bottom > a {
+	display: block;
+	text-align: center;
+	width: 90%;
+	color: black !important;
+	margin: 3% auto;
+	padding: 3% 0;
+	
+	text-shadow: none !important;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#e8e8e8), color-stop(51%,#bdbdbf), color-stop(55%,#a9a9aa), color-stop(100%,#bdbdbf));
+}
+.toolbar-bottom > a.cancel {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#636363), color-stop(51%,#353535), color-stop(55%,#262626), color-stop(100%,#1c1c1c));
+	color: white !important;
+}
+
+
+/*
+*
+*   Muscle Page
+*
+*/
+#muscle_page_woman .ui-content > img,
+#muscle_page_man .ui-content > img {
+	width: 100%;
+/* 	margin: 0 15%; */
+	position: absolute;
+	top: -20px;
+}
+
+#muscle_page_woman .overlay table,
+#muscle_page_man .overlay table {
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+
+#muscle_page_woman .overlay table td,
+#muscle_page_man .overlay table td {
+	padding: 0.5em 0.5em 0.5em 0;
+}
+
+#muscle_page_woman .overlay table td:FIRST-CHILD,
+#muscle_page_man .overlay table td:FIRST-CHILD {
+	width: 25%;
+	font-family: 'FarnhamDisplay';
+	font-style: italic;
+}
+
+#muscle_page_woman .ui-content > a.switchleft,
+#muscle_page_man .ui-content > a.switchleft {
+	position: absolute;
+	left: 2%;
+	top: 50%;
+	display: block;
+	width: 20%;
+	z-index: 500;
+}
+
+#muscle_page_woman .ui-content > a.switchright,
+#muscle_page_man .ui-content > a.switchright {
+	position: absolute;
+	right: 2%;
+	top: 50%;
+	display: block;
+	width: 12%;
+}
+
+a.switchleft, a.switchright {
+	width: 40%;
+}
+
+#muscle_page_woman .ui-content .muscle_homelink,
+#muscle_page_man .ui-content .muscle_homelink {
+	position: absolute;
+	bottom: 5%;
+	left: 0;
+	width: 100%;
+}
+#muscle_page_woman .ui-content div.muscle_homelink a > img,
+#muscle_page_man .ui-content div.muscle_homelink a > img {
+	width: 15%;
+}
+
+.first {
+}
+
+.row1, .row2 {
+	font-style: italic;
+	font-size: 14px;
+	font-family: FarnhamDisplay;
+}
+.row1 {
+	color: #FCB178;
+}
+.row2 {
+	color: #84D7D9;
+}
+
+
+
+/*
+*
+*   Knowledge Page
+*
+*/
+
+.knowledge_link {
+	display: block;
+	float: left;
+	width: 50%;
+	text-align: center;
+	font-size: 13px;
+	font-family: FarnhamDisplay;
+	font-weight: bold;
+	margin-top: 5%;
+}
+
+.knowledge_link > img {
+	width: 100%;
+}
+
+.muscle_link {
+	display: block;
+	float: left;
+	width: 50%;
+	text-align: center;
+	font-size: 13px;
+	font-family: FarnhamDisplay;
+	font-weight: bold;
+	margin-top: 5%;
+}
+
+.muscle_link > img {
+	width: 90%;
+}
+.muscle_link > span {
+	display: block;
+}
+
+
+
+.knowledge_link:nth-child(2n+1) {
+	clear: left;
+/* 	margin-left: 13%; */
+}
+
+#knowledge_page .ui-content .contentlinks,
+#knowledge_details_page .ui-content .contentlinks {
+    width: 90%;
+    margin: 15% auto 0 auto;
+    text-align: left;
+}
+
+#knowledge_details_page .ui-content .contentlinks .farnham {
+	font-family: FarnhamDisplay !important;
+}
+
+#knowledge_details_page .ui-content .contentlinks {
+	font-family: FarnhamDisplay;
+	font-size: 15px;
+}
+
+#knowledge_page .ui-content,
+#knowledge_details_page .ui-content
+ {
+/* 	padding-top: 60px; */
+}
+
+#knowledge_details_page p:FIRST-CHILD {
+	padding: 0;
+	background: none;
+}
+
+#knowledge_details_page p {
+	padding-top: 1.5em;
+	background: url("../img/Sonstige/Trenner@2x.png") no-repeat top center;
+}
+
+
+
+/*
+*
+*   Settings Page
+*
+*/
+
+#settings_page .cell {
+	background: url('../img/Einstellungen/Cell@2x.png') no-repeat left center;
+	background-size: 100% 100%;
+	float: left;
+	padding: 5%;
+	width: 90%;
+}
+
+#settings_page .cell > div > img {
+	width: 20%;
+	margin: 10% 0 2% 10%;
+}
+#settings_page .cell > div {
+	float: left;
+	width: 40%;
+}
+#settings_page .cell > a {
+	width: 50%;
+	display: inline-block;
+}
+#settings_page .cell > a > img {
+	float: right;
+	width: 20%;
+	margin: 12% 5% 5% 5%;
+}
+
+#postmail {
+	display: none !important;
+}
+
+.categoryonline img {
+	width: 90%;
+}
+
+
+@media (min-width: 800px) {
+	.ui-mobile .preview .previewimg {
+		background-size: 100% 99%;
+		padding: 0.5em;
+	}
+	
+	#themelist .ui-content .contentlinks {
+		margin: 10% auto;
+	}
+	
+	#position_page .ui-content > img {
+		margin-top: 18%;
+	}
+	
+	#position_page .ui-content #muscle > img {
+		width: 100px;
+	}
+	
+	#position_page .ui-content #muscle > span.muscle_label {
+		top: 110px;
+		font-size: 16px;
+		left: -15px;
+	}
+	
+	.link > span {
+		font-size: 18px;
+	}
+	
+	.muscle_link {
+		font-size: 18px;
+	}
+	
+	.ui-mobile .preview > .subtitel {
+		font-size: 20px;
+	}
+	
+	.knowledge_link {
+		font-size: 18px;
+	}
+	
+	#knowledge_details_page .ui-content .contentlinks {
+		font-size: 20px;
+	}
+	
+	.ui-header .ui-title, .ui-footer .ui-title {
+		font-size: 20px;
+	}
+	
+	.ui-content > .subline {
+		font-size: 18px;
+	}
+	
+	.ui-content .overlay > div {
+		font-size: 18px;
+	}
+	
+	#position_page .ui-footer > div > a {
+		font-size: 16px;
+	}
+	
+	#muscle_page_woman .ui-content div.muscle_homelink a > img, #muscle_page_man .ui-content div.muscle_homelink a > img {
+		width: 10%;
+	}
+	
+	.backbutton {
+		top: 9px;
+	}
+	
+	.category_buttons a, .intimicy_buttons a, .gender_buttons a {
+		font-size: 15px;
+	}
+}

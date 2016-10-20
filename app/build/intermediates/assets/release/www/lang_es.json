@@ -1,0 +1,126 @@
+﻿{
+"Back" : "vuelta",
+
+"daten_en.db" : "daten_es.db",
+"Header_en.png" : "Header_es.png",
+"TippsTricksHeader_en.png" : "TippsTricksHeader_es.png",
+
+
+"All" : "Todos",
+"Not Done" : "No hecho",
+"Done" : "Hecho",
+"I Like" : "Me gusta",
+"Wish" : "Deseo",
+"Professional" : "Profesional",
+"Knowledge" : "Concimientos",
+"Random" : "Al azar",
+"Categories" : "Categoría",
+
+"More" : "Más",
+"Settings" : "Ajustes",
+"Feedback" : "Feedback",
+"Rate" : "Evaluar",
+"Facebook" : "Facebook",
+"Twitter" : "Twitter",
+"Suggest" : "Recomendar",
+"Website" : "Web",
+"About us" : "Sobre nosotros",
+"Hints" : "Sugerencia",
+
+"Button sounds" : "Sonidos",
+"Music" : "Música",
+"Video" : "Video",
+
+
+"Overview" : "Resúmen",
+"Category" : "Categoría",
+"Musculature" : "Musculatura",
+"Sports" : "Sport",
+
+
+"Low" : "Bajo",
+"Middle" : "Medio",
+"High" : "Alto",
+"Intimicy level" : "Intimidad",
+"Strain level" : "Actividad física",
+"Male" : "Hombre",
+"Female" : "Mujer",
+
+"Cancel" : "Cancelar",
+"SportKamasutra Feedback" : "SportKamasutra Feedback",
+"SportKamasutra App" : "SportKamasutra App",
+
+"Musclegroup" : "Parte musucular",
+
+"These muscle groups are demanded:" : "Estos músculos se exigen:",
+"Primary:" : "Primario:",
+"Secondary:" : "Secundario:",
+"Nothing" : "Nada",
+
+"Tennis" : "Tenis",
+"Boxing" : "Box",
+"Horseback riding" : "Equitación",
+"Volleyball" : "Voleibol",
+"Handball" : "Balonmano",
+"Basketball" : "Baloncesto",
+"Football" : "Fútbol americano",
+"Ice Hockey" : "Hockey sobre hielo",
+"Soccer" : "Fútbol",
+
+
+
+"This muscle is the broadest muscle of the back. It powers all pulling motions and helps provide a V-shaped torso." : "Este es el músculo más ancho de la musculatura de la espalda, el cual es responsable de todos los movimientos de estiramiento. Este músculo grande de la espalda ayuda a conseguir un cuerpo más definido.",
+
+
+"This muscle is also known as the hamstring. It is primarily responsible for squats and hip extensions." : "El músculo posterior del muslo es elemantal para la flexión de rodillas y extensión de la cadera.",
+
+
+"This double-headed muscle is also known as the sternomastoid. It is located on both sides of the neck." : "Este es un músculo bicéfalo y se encuentra tanto en la parte derecha de la cabeza como en la parte izquierda.",
+
+
+"This muscle is responsible for spinal extension." : "Este músculo es reponsable de la postura correcta de la columna vertebral.",
+
+
+"This muscle can be divided into three areas. It is also known as the deltoid muscle. It is responsible for frontal lifting movements." : "Este músculo está dividido en tres sectores y es responsable de la mayoría de los ejercicios de levantamiento.",
+
+
+"There are two types of adductors: the adductor longus, the adductor magnus and the adductor brevis. These muscles are responsible for pulling up the leg. The antagonistic muscles are the abductors." : "Este músculo pertenece a los muslos. Aquí están incluidos el músculo aductor mediano, el músculo aductor mayor y el músculo aductor menor. Sirve para todos los movimientos que son hechos por las piernas. Los músculos contrarios del aductor son los músculos abductores.",
+
+
+"This muscle is a double-headed muscle and is simply called biceps. It is responsible for almost all pulling motions." : "Este músculo sirve para ejercicios de estiramiento.",
+
+
+"The triceps is a three-headed muscle and it is the antagonistic muscle of the biceps. It is situated on the back of the upper arm and it is responsible for the extension of the arm." : "Aparte de biceps existen los triceps y como se entiende por la denominación, es un músculo tricéfalo. Este músculo tricéfalo está en la parte trasera del brazo y sirve para estirarlo.",
+
+
+"It is the largest muscle of the body. The muscle is responsible for the extension and stabilization of the thighs." : "El glúteo sirve para la extensión y estabilización del muslo y es el músculo más grande del cuerpo.",
+
+
+"This muscle is three-headed and also known as the calf muscle. It is responsible for jumping and running." : "Como se puede deducir de su denominación, éste músculo consta de trés partes y se denomina músculo sural tricéfalo. Esté músculo es importante para saltar y correr.",
+
+
+"This muscle group is situated at the chest. It is responsible for pulling up the arms to the body." : "El músculo pectoral sirve para los movimientos de jalar los brazos hacia la parte frontal del cuerpo.",
+
+
+"This muscle is one of the most aesthetic muscles. It is also known as the six pack. It is responsible for flexing the torso." : "Es el músculo más estético cuando se está entranado. En jerga o modismo, se le llama “sixpack” y se refiere a los músculos abdominales que sirven para la flexión del tronco.",
+
+
+"This muscle is composed of three parts. It extends from the shoulders to the spine and is shaped triangularly." : "Este músculo consiste en trés partes y se extiende de los hombros hasta la columna vertebral. Tiene su denominación trapecio (del latín trapezius) por su forma.",
+
+
+"This muscle is the four-headed muscle of the femur. It is responsible for the extension of the knee joint and enables the extension out of the squat. It is one of the strongest muscles." : "Este músculo de „cuatro cabezas“ es uno de los músculos más fuertes. Principálmente sirve para el estiramiento de articulación de la rodilla y con esto, permitir la elevación en posición en cuclillas.",
+
+
+
+"Almost all positions demand the entire body and therefore represent a full-body workout. The display of the primary and secondary muscles serves to illustrate the focus of each exercise." : "Casi todas las posiciones requieren de todo el cuerpo, y con ésto, se regula un ejercicio completo para éste. Las indicaciones del los músculos primarios y/o secundarios muestran cual es el centro/enfoque del ejercicio.",
+
+"A special feature of this App is the intimacy level. It is divided into three different areas: low, medium and high. The level of intimacy points out a recommendation that shows how intimate and personal a certain position is. The higher the level of intimacy the more intimate and personal is the position." : "Una característica especial de esta app es el grado de intimidad. Este está dividido en trés secciones: bajo, medio y alto.\n\nEl grado de intimidad es una forma de señalar qué tan íntima es una posición. Cuanto más alto sea el grado de intimidad, más íntima será una posición.",
+
+"The level of intimacy is influenced by the following facts:" : "El grado de intimidad se basa en los siguientes puntos:",
+
+"-    The length of the relationship\n-    Trust of the partner\n-    Age of the partners\n-    Sexual experience of both partners" : "<ul><li>Periódo de la relación</li><li>Confianza en la pareja</li><li>Edad de la pareja</li><li>Experiencia de los dos</li></ul>",
+
+"Remember your personal hygiene! A good personal hygiene is essential when it comes to sexual practices. Therefore talk to your partner about everything beforehand without any taboos. \n\nIt is important not to expect too much from your partner. You should start off with easy positions before you devote yourself to more professional ones." : "¡No olviden la higiene! Lo esencial de las prácticas sexuales es una buena higiene. Por lo tanto, hablen antes con su pareja y no tengan tabús acerca de estó.\n\nEs importante no exigir demasiado de su pareja y de si mismo. Por eso, empiecen con las posiciones más fáciles primero, antes de dedicarse a las 'posiciones profesionales'.",
+
+"Sports:\nUnder the heading sports you will find all the positions that help you improve at a specific sport. If you choose Basketball for example, you will see all the positions that help you improve at that specific sport. The demanded muscle groups of the sport are the same ones used during the positions." : "Disciplinas deportivas:\nEn disciplinas deportivas van a encontrar las posiciones que les van a ayudar mejorarse en las disciplinas deportivas determinadas. Si elijan por ejemplo baloncesto se les van a mostrar todas las posiciones que les van a ayudar mejorarse en esta disciplina deportiva. Los grupos musculares de la disciplina deportiva son las mismas que se exigen mientras haciendo la posición."
+}
